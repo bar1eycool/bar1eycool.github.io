@@ -1,0 +1,25 @@
+
+
+github: "bar1eycool"
+title: hs1n hsu
+description: Chaos is a ladder.
+collections:
+authors: hs1n
+logo: assets/img/logo.png
+# theme: jekyll-theme-minimal
+show_downloads: false
+
+sass:
+    style: compressed
+
+# Some configuration settings cannot be changed for GitHub Pages sites.
+lsi: false
+safe: true
+# source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
