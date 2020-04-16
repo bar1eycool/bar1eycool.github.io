@@ -1,13 +1,9 @@
-$font-stack: "sans-serif",
-"Open Sans",
-"Helvetica";
+$font-stack: "sans-serif", "Open Sans", "Helvetica";
 $c1: #802bb1;
 $c2: #2d283e;
 $c3: hsl(288, 20%, 48%);
 $c4: rgb(255, 238, 250);
 $c5: #d1d7e0;
-
-
 
 nav {
     display: flex;
@@ -27,11 +23,11 @@ nav {
         text-align: center;
         padding: 10px 10px;
         margin: 0;
-        width: 200px;
+        width: 100px;
     }
 
     a.active {
-        background-color: #FFF;
+        background-color: #fff;
     }
 
     a:hover {
@@ -56,30 +52,22 @@ header {
     width: 200px;
     height: 100%;
     top: 50px;
-    background-color: $c4;
-
-    font-size: 16px;
-    font-weight: bold;
-    color: #A556A2;
+    background-color: transparent;
+    color: #a556a2;
     text-transform: lowercase;
-    text-shadow: 5px 2.5px #AAFFFF;
+    font-weight: bold;
 
-    hr {
-        width: 75%;
-    }
+
 
     h1 {
+        text-shadow: 5px 2.5px #aaffff;
         text-align: center;
     }
 
     p,
-    i {
-        text-align: center;
-        color: #7777;
-        font-size: 12px;
-    }
-
+    i,
     img {
+        text-align: center;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -89,14 +77,16 @@ header {
         list-style-type: none;
     }
 
+    hr {
+        width: 75%;
+    }
+
     a {
         text-decoration: none;
     }
-
     a:link {
         color: $c1;
     }
-
     a:visited {
         color: $c1;
     }
@@ -147,7 +137,45 @@ footer {
     background-color: $c3;
 }
 
-@media all and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    header {
+        width: 50px;
+        top: 50px;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+        background-color: transparent;
+
+        h1 {
+            margin: 0px;
+            padding: 20px 0px 20px 0px;
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            text-align: center;
+            transform: rotate(-180deg);
+        }
+
+        .header-list {
+            font-size: 16px;
+            line-height: 18px;
+            margin: 0px;
+            padding: 40px 0px 40px 0px;
+            writing-mode: vertical-lr;
+            text-orientation: sideways;
+            transform: rotate(-180deg);
+        }
+
+        .header-contents {
+            text-align: left;
+            // display: none;
+        }
+    }
+
+    .markdown-body {
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 1023px) {
     header {
         display: none;
     }
